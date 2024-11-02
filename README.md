@@ -25,6 +25,16 @@ Ejemplo Registro:
 Ejemplo registro en GCP Firestore
 ![image](https://github.com/user-attachments/assets/31bf2915-a795-49ba-9ebe-f5945737f023)
 
+**Componente Microservicio - Registro Citas Médicas**
+
+* Tipo de componente: Lógico (microservicio) - FaaS (Function as a Service)
+* Nombre: citas-medicas-ms
+* Lenguaje de Programación: Python
+* Descripción: Microservicio (POST) para generar registro de citas médicas en la db NoSQL citas-medicas-db.
+
+  URL: https://us-east4-cbse-2024ii-438603.cloudfunctions.net/citas-medicas-ms
+
+![image](https://github.com/user-attachments/assets/b952cbe1-dcca-4e2f-86d6-84d95225816d)
 
 **Componente DB SQL - Registro Usuarios**
 
@@ -50,17 +60,20 @@ Ejemplo registro en GCP SQL
 
 ![image](https://github.com/user-attachments/assets/4f34567e-712f-4d53-935f-edd9f44eff26)
 
+**Componente Imagen de microservicio en Registry - Registro Pacientes**
 
-**Componente Microservicio - Registro Citas Médicas**
+* Repositorio: telemed
+* Microservicio : med-paciente-ms
+* Descripción: Repositorio con la imagen del microservicio para guardar los datos del paciente
+  
+![image](https://github.com/user-attachments/assets/22d77bd0-8a68-4254-a8d5-cc497fa79ce9)
 
-* Tipo de componente: Lógico (microservicio) - FaaS (Function as a Service)
-* Nombre: citas-medicas-ms
-* Lenguaje de Programación: Python
-* Descripción: Microservicio (POST) para generar registro de citas médicas en la db NoSQL citas-medicas-db.
+**Componente Servicio en Cloud Run **
+* Servicio: med-paciente-ms
+* Descripción: Servicio para ejecutar el contenedor del microservicio que guarda los datos del paciente
+  
+![image](https://github.com/user-attachments/assets/5c344b02-3cff-4fbf-8c28-325fdcb119e9)
 
-  URL: https://us-east4-cbse-2024ii-438603.cloudfunctions.net/citas-medicas-ms
-
-![image](https://github.com/user-attachments/assets/b952cbe1-dcca-4e2f-86d6-84d95225816d)
 
 
 
