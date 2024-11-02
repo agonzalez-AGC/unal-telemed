@@ -53,7 +53,7 @@ Ejemplo registro en GCP SQL
 
 **Componente Microservicio - Registro Citas Médicas**
 
-* Tipo de componente: Lógico (microservicio)
+* Tipo de componente: Lógico (microservicio) - FaaS (Function as a Service)
 * Nombre: citas-medicas-ms
 * Lenguaje de Programación: Python
 * Descripción: Microservicio (POST) para generar registro de citas médicas en la db NoSQL citas-medicas-db.
