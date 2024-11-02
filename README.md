@@ -1,4 +1,4 @@
-Componente DB NoSQL - Registro Citas
+**Componente DB NoSQL - Registro Citas**
 
 * Tipo de componente: Base de Datos
 * Nombre: citas-medicas-db
