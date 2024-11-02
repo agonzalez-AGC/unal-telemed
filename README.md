@@ -51,3 +51,16 @@ Ejemplo registro en GCP SQL
 ![image](https://github.com/user-attachments/assets/4f34567e-712f-4d53-935f-edd9f44eff26)
 
 
+**Componente Microservicio - Registro Citas Médicas**
+
+* Tipo de componente: Lógico (microservicio)
+* Nombre: citas-medicas-ms
+* Lenguaje de Programación: Python
+* Descripción: Microservicio (POST) para generar registro de citas médicas en la db NoSQL citas-medicas-db.
+
+  URL: https://us-east4-cbse-2024ii-438603.cloudfunctions.net/citas-medicas-ms
+
+![image](https://github.com/user-attachments/assets/b952cbe1-dcca-4e2f-86d6-84d95225816d)
+
+
+
