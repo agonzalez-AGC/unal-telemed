@@ -7,6 +7,8 @@
 * Descripción: Base de datos NoSQL para guardar el registro de las citas médicas programadas.
 
 Ejemplo Registro:
+
+```json
 {
     "id": "cita-123",
     "details": {
@@ -19,5 +21,6 @@ Ejemplo Registro:
         "especialidad":"cardiologia"
     }
 }
-
+```
+Ejemplo registro en GCP Firestore
 ![image](https://github.com/user-attachments/assets/31bf2915-a795-49ba-9ebe-f5945737f023)
