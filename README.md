@@ -65,11 +65,14 @@ Ejemplo registro en GCP SQL
 * Repositorio: telemed
 * Microservicio : med-paciente-ms
 * Descripción: Repositorio con la imagen del microservicio para guardar los datos del paciente
+
+  us-east4-docker.pkg.dev/cbse-2024ii-438404/telemed
   
 ![image](https://github.com/user-attachments/assets/22d77bd0-8a68-4254-a8d5-cc497fa79ce9)
 
-**Componente Servicio en Cloud Run **
+**Componente Servicio en Cloud Run**
 * Servicio: med-paciente-ms
+* url: https://med-paciente-ms-222710232023.us-east4.run.app
 * Descripción: Servicio para ejecutar el contenedor del microservicio que guarda los datos del paciente
   
 ![image](https://github.com/user-attachments/assets/5c344b02-3cff-4fbf-8c28-325fdcb119e9)
