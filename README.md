@@ -48,4 +48,6 @@ Ejemplo Registro:
 ```
 Ejemplo registro en GCP SQL
 
+![image](https://github.com/user-attachments/assets/4f34567e-712f-4d53-935f-edd9f44eff26)
+
 
