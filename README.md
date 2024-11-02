@@ -24,3 +24,28 @@ Ejemplo Registro:
 ```
 Ejemplo registro en GCP Firestore
 ![image](https://github.com/user-attachments/assets/31bf2915-a795-49ba-9ebe-f5945737f023)
+
+
+**Componente DB SQL - Registro Usuarios**
+
+* Tipo de componente: Base de Datos
+* Nombre: med-users-db
+* Paradigma: SQL (relacional)
+* Sistema de Gestión de Base de Datos: GCP SQL
+* Descripción: Base de datos SQL para guardar la información de identificación de los pacientes.
+
+Ejemplo Registro:
+
+```json
+{
+    "paciente_tipo_id" : "1",
+    "paciente_id" : "52123",
+    "name": "Adriana",
+    "email": "agonzalez@unal.edu.co@unal.edu.co",
+    "fecha_nacimiento" : "1979/01/01",
+    "eps" : "2"
+}
+```
+Ejemplo registro en GCP SQL
+
+
