@@ -78,5 +78,27 @@ Ejemplo registro en GCP SQL
 ![image](https://github.com/user-attachments/assets/5c344b02-3cff-4fbf-8c28-325fdcb119e9)
 
 
+**Componente Imagen de microservicio en Registry - API Gateway**
 
+![image](https://github.com/user-attachments/assets/c0961dd3-7e90-43b4-b5d6-59b6cf8fdf21)
+
+
+
+
+**Componente API Gateway Servicio en Cloud Run**
+
+![image](https://github.com/user-attachments/assets/578b3f1b-870c-4b77-ab68-3477902ed43f)
+
+https://unal-telemed-ag-222710232023.us-east4.run.app
+
+**Componente Imagen de microservicio en Registry - Front end**
+
+![image](https://github.com/user-attachments/assets/5ceafc7a-c3e8-4448-916c-6afc5e71be73)
+
+
+**Componente Front end Servicio en Cloud Run**
+
+![image](https://github.com/user-attachments/assets/93f937bc-4415-4241-9d21-3d3a13a48872)
+
+https://unal-telemed-frontend-222710232023.us-east4.run.app
 
