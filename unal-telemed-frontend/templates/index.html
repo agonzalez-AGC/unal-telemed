@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Citas Médicas</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<div class="form-container">
+    <h1>Registro de Citas Médicas</h1>
+    <form method="POST" action="/record">
+
+        <!-- Sección: Datos del paciente -->
+        <fieldset>
+            <h2>Datos del Paciente</h2>
+            
+            <label for="paciente_tipo_id">Tipo de identificación:</label>
+            <select id="paciente_tipo_id" name="paciente_tipo_id" required>
+                <option value="">Seleccione...</option>
+                <option value="CC">Cédula de Ciudadanía</option>
+                <option value="TI">Tarjeta de Identidad</option>
+                <option value="CE">Cédula de Extranjería</option>
+                <option value="PAS">Pasaporte</option>
+            </select> <br>
+
+            <label for="paciente_id">No. de Identificación:</label>
+            <input type="text" id="paciente_id" name="paciente_id" pattern="\d+" required placeholder="Número de documento"><br>
+
+            <label for="paciente_name">Nombre Completo:</label>
+            <input type="text" id="paciente_name" name="paciente_name" required placeholder="Nombre del paciente"><br>
+
+            <label for="paciente_email">Correo Electrónico:</label>
+            <input type="email" id="paciente_email" name="paciente_email" placeholder="correo@ejemplo.com"><br>
+
+            <label for="paciente_fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="paciente_fecha_nacimiento" name="paciente_fecha_nacimiento"><br>
+
+            <label for="paciente_eps">EPS:</label>
+            <input type="text" id="paciente_eps" name="paciente_eps" placeholder="Nombre de la EPS"><br>
+        </fieldset>
+
+        <!-- Sección: Datos de la cita médica -->
+        <fieldset>
+            <h2>Datos de la Cita Médica</h2>
+
+            <label for="cita_id">ID de la Cita:</label>
+            <input type="text" id="cita_id" name="cita_id" required><br>
+
+            <label for="cita_fecha">Fecha:</label>
+            <input type="date" id="cita_fecha" name="cita_fecha" required>
+
+            <label for="cita_hora">Hora:</label>
+            <input type="time" id="cita_hora" name="cita_hora" required><br>
+
+            <label for="cita_medico_id">ID del Médico:</label>
+            <input type="text" id="cita_medico_id" name="cita_medico_id" required><br>
+
+            <label for="cita_medico_nombre">Nombre del Médico:</label>
+            <input type="text" id="cita_medico_nombre" name="cita_medico_nombre" required><br>
+
+            <label for="cita_especialidad_id">ID de la Especialidad:</label>
+            <input type="text" id="cita_especialidad_id" name="cita_especialidad_id"><br>
+
+            <label for="cita_especialidad_des">Especialidad:</label>
+            <select id="cita_especialidad_des" name="cita_especialidad_des">
+                <option value="">Seleccione...</option>
+                <option value="Cardiología">Cardiología</option>
+                <option value="Dermatología">Dermatología</option>
+                <option value="Pediatría">Pediatría</option>
+                <option value="Ginecología">Ginecología</option>
+                <option value="Ortopedia">Ortopedia</option>
+            </select><br>
+        </fieldset>
+
+        <!-- Botón de envío -->
+        <button type="submit" class="btn-submit">Crear Registro</button>
+    </form>
+</div>
+</body>
+</html>
