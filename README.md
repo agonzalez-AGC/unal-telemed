@@ -109,4 +109,10 @@ https://unal-telemed-frontend-222710232023.us-east4.run.app
 
 ![image](https://github.com/user-attachments/assets/db8a454a-5a60-4a79-b8a5-b92bbb45bcc3)
 
+![image](https://github.com/user-attachments/assets/466af2db-fe6e-489d-a8c3-28809c0e5155)
+
+![image](https://github.com/user-attachments/assets/9671c22b-82f0-4107-828b-e450631cc8a7)
+
+
+
 
