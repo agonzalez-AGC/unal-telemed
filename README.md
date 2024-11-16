@@ -96,12 +96,17 @@ https://unal-telemed-ag-222710232023.us-east4.run.app
 ![image](https://github.com/user-attachments/assets/5ceafc7a-c3e8-4448-916c-6afc5e71be73)
 
 
-**Creando GKE Cluster**
-![image](https://github.com/user-attachments/assets/3c50dbdb-886d-45c4-86d0-20da7227fe04)
+
 
 **Componente Front end Servicio en Cloud Run**
 
 ![image](https://github.com/user-attachments/assets/93f937bc-4415-4241-9d21-3d3a13a48872)
 
 https://unal-telemed-frontend-222710232023.us-east4.run.app
+
+**Creando GKE Cluster**
+![image](https://github.com/user-attachments/assets/3c50dbdb-886d-45c4-86d0-20da7227fe04)
+
+![image](https://github.com/user-attachments/assets/db8a454a-5a60-4a79-b8a5-b92bbb45bcc3)
+
 
