@@ -70,41 +70,50 @@ Ejemplo registro en GCP SQL
   
 ![image](https://github.com/user-attachments/assets/22d77bd0-8a68-4254-a8d5-cc497fa79ce9)
 
-**Componente Servicio en Cloud Run**
+**Componente Servicio - Registro Pacientes en GKE**
 * Servicio: med-paciente-ms
-* url: https://med-paciente-ms-222710232023.us-east4.run.app
+* url: http://35.230.188.89:4000/api/user
 * Descripción: Servicio para ejecutar el contenedor del microservicio que guarda los datos del paciente
-  
-![image](https://github.com/user-attachments/assets/5c344b02-3cff-4fbf-8c28-325fdcb119e9)
+
+  ![image](https://github.com/user-attachments/assets/d5a5e26e-0442-4bce-af1e-7b032faf8b6e)
 
 
 **Componente Imagen de microservicio en Registry - API Gateway**
+* Repositorio: telemed
+* Microservicio :unal-telemed-ag
+* Descripción: Repositorio con la imagen del microservicio del API Gateway
 
 ![image](https://github.com/user-attachments/assets/c0961dd3-7e90-43b4-b5d6-59b6cf8fdf21)
 
 
+**Componente API Gateway Servicio en GKE**
+* Servicio: unal-telemed-ag
+* url: http://35.245.192.11:4500/api/record
+* Descripción: Servicio para ejecutar el contenedor del microservicio del API GateWay
 
+![image](https://github.com/user-attachments/assets/6c12d5dd-c7a6-4e52-becd-a252cabaadfb)
 
-**Componente API Gateway Servicio en Cloud Run**
-
-![image](https://github.com/user-attachments/assets/578b3f1b-870c-4b77-ab68-3477902ed43f)
-
-https://unal-telemed-ag-222710232023.us-east4.run.app
 
 **Componente Imagen de microservicio en Registry - Front end**
-
+* Repositorio: telemed
+* Microservicio : unal-telemed-frontend
+* Descripción: Repositorio con la imagen del microservicio del Front End
+* 
 ![image](https://github.com/user-attachments/assets/5ceafc7a-c3e8-4448-916c-6afc5e71be73)
 
 
+**Componente Front end Servicio en GKE**
+* Servicio: unal-telemed-frontend
+* url: http://35.186.161.126/
+* Descripción: Servicio para ejecutar el contenedor del microservicio del Front End
+* 
+![image](https://github.com/user-attachments/assets/8c995489-19a1-47f0-9127-c5977fbfd6c2)
 
-
-**Componente Front end Servicio en Cloud Run**
-
-![image](https://github.com/user-attachments/assets/93f937bc-4415-4241-9d21-3d3a13a48872)
-
-https://unal-telemed-frontend-222710232023.us-east4.run.app
 
 **Creando GKE Cluster**
+
+Se crea un cluster en Kubernetes, se despliegan y se exponen los componentes del proyecto
+
 ![image](https://github.com/user-attachments/assets/3c50dbdb-886d-45c4-86d0-20da7227fe04)
 
 ![image](https://github.com/user-attachments/assets/db8a454a-5a60-4a79-b8a5-b92bbb45bcc3)
