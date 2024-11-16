@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    cloud.google.com/neg: '{"ingress":true}'
+  creationTimestamp: "2024-11-16T01:42:32Z"
+  finalizers:
+  - service.kubernetes.io/load-balancer-cleanup
+  labels:
+    app: med-paciente-ms
+  name: med-paciente-ms
+  namespace: default
+  resourceVersion: "40011"
+  uid: 4ec90995-3abe-428b-ba51-10c859eff6ba
+spec:
+  allocateLoadBalancerNodePorts: true
+  clusterIP: 34.118.226.207
+  clusterIPs:
+  - 34.118.226.207
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - nodePort: 32634
+    port: 4000
+    protocol: TCP
+    targetPort: 4000
+  selector:
+    app: med-paciente-ms
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 35.230.188.89
+      ipMode: VIP

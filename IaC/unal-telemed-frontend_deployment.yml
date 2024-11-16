@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "2"
+  creationTimestamp: "2024-11-16T01:38:05Z"
+  generation: 2
+  labels:
+    app: unal-telemed-frontend
+  name: unal-telemed-frontend
+  namespace: default
+  resourceVersion: "71995"
+  uid: ae677091-3ea0-473e-9a41-57e2bf2e1bd3
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: unal-telemed-frontend
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: unal-telemed-frontend
+    spec:
+      containers:
+      - env:
+        - name: ISBN_AG_API_URL
+          value: http://35.245.192.11:4500
+        image: us-east4-docker.pkg.dev/cbse-2024ii-438404/telemed/unal-telemed-frontend
+        imagePullPolicy: Always
+        name: unal-telemed-frontend
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30

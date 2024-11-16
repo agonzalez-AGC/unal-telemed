@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    cloud.google.com/neg: '{"ingress":true}'
+  creationTimestamp: "2024-11-16T01:42:48Z"
+  finalizers:
+  - service.kubernetes.io/load-balancer-cleanup
+  labels:
+    app: unal-telemed-frontend
+  name: unal-telemed-frontend
+  namespace: default
+  resourceVersion: "40124"
+  uid: 1468d2e7-a327-41f2-a9ac-d77fb833b372
+spec:
+  allocateLoadBalancerNodePorts: true
+  clusterIP: 34.118.225.83
+  clusterIPs:
+  - 34.118.225.83
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - nodePort: 31946
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: unal-telemed-frontend
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 35.186.161.126
+      ipMode: VIP
